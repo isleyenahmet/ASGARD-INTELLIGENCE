@@ -13,21 +13,21 @@ ASGARD INTELLIGENCE backend ve frontend servisleri, yüksek performanslı ve gü
 
 ```mermaid
 graph TD
-    subgraph Veri Altyapısı (Backend & Database)
-        DB[(SQLite: gigafactory_live.db)] -->|500K+ Zaman Serisi Telemetri| Stream[FastAPI /api/stream Uç Noktası]
-        DB -->|Kullanıcı Yetkileri & Ayarlar| Auth[JWT & RBAC Güvenlik Sistemi]
+    subgraph "Veri Altyapısı (Backend & Database)"
+        DB[("SQLite: gigafactory_live.db")] -->|500K+ Zaman Serisi Telemetri| Stream["FastAPI /api/stream Uç Noktası"]
+        DB -->|Kullanıcı Yetkileri & Ayarlar| Auth["JWT & RBAC Güvenlik Sistemi"]
     end
 
-    subgraph Yapay Zeka Katmanı (GNN Prediction Engine)
-        Stream -->|Girdi Tensörleri| GAT[2 Katmanlı GAT PyTorch Modeli]
-        GAT -->|Anomali Skoru & Attention Ağırlıkları| Explain[Explainable AI: SHAP & LIME Katmanı]
+    subgraph "Yapay Zeka Katmanı (GNN Prediction Engine)"
+        Stream -->|Girdi Tensörleri| GAT["2 Katmanlı GAT PyTorch Modeli"]
+        GAT -->|Anomali Skoru & Attention Ağırlıkları| Explain["Explainable AI: SHAP & LIME Katmanı"]
     end
 
-    subgraph Görsel Arayüz (Frontend SPA Dashboard)
-        Explain -->|Olasılık Puanı & XAI Katkıları| UI[SPA Arayüz - Tailwind CSS]
+    subgraph "Görsel Arayüz (Frontend SPA Dashboard)"
+        Explain -->|Olasılık Puanı & XAI Katkıları| UI["SPA Arayüz - Tailwind CSS"]
         Auth -->|Yetki & Rol Kontrolü| UI
-        UI -->|Three.js Canvas| Twin[3D Digital Twin Topoloji Görselleştirici]
-        UI -->|html2canvas / jsPDF| PDF[PDF Anomali Analiz Raporu]
+        UI -->|Three.js Canvas| Twin["3D Digital Twin Topoloji Görselleştirici"]
+        UI -->|html2canvas / jsPDF| PDF["PDF Anomali Analiz Raporu"]
     end
 ```
 
