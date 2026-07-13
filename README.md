@@ -59,7 +59,7 @@ Sistemi çalıştırabilmek için bilgisayarınızda **Python 3.10+** kurulu olm
 
 ### 1. Depoyu Klonlayın veya İlgili Klasöre Geçin
 ```bash
-cd c:/Users/isley/Desktop/newAnomali
+cd newAnomali
 ```
 
 ### 2. Gerekli Kütüphaneleri Yükleyin
@@ -103,7 +103,7 @@ Aşağıda, uygulamada yer alan her bir sayfanın arayüz tasarımı, işlevleri
 ![Kimlik Doğrulama Ekranı](assets/login.png)
 
 #### **Detaylı Açıklama:**
-*   **Dosya:** [login.html](file:///c:/Users/isley/Desktop/newAnomali/login.html)
+*   **Dosya:** [login.html](login.html)
 *   **İşlev:** Sisteme güvenli giriş kapısıdır. Kullanıcılardan alınan bilgiler FastAPI `/api/login` uç noktasına gönderilir. Başarılı girişte backend, kullanıcı izinlerini (pages), adını, departmanını ve rolünü içeren bir **JWT token** döndürür ve bu token tarayıcıda `localStorage` üzerinde saklanır.
 *   **Tasarım Özellikleri:** Modern glassmorphic giriş formu, neon yeşili gölgelendirmeler, hareketli arka plan parçacıkları ve hata durumlarında kullanıcıyı bilgilendiren dinamik uyarı kartları içerir.
 *   **Giriş Bilgileri (Admin):**
@@ -117,7 +117,7 @@ Aşağıda, uygulamada yer alan her bir sayfanın arayüz tasarımı, işlevleri
 ![3D Dijital İkiz Dashboard](assets/dashboard.png)
 
 #### **Detaylı Açıklama:**
-*   **Dosya:** [dashboard.html](file:///c:/Users/isley/Desktop/newAnomali/dashboard.html)
+*   **Dosya:** [dashboard.html](dashboard.html)
 *   **İşlev:** Fabrika düğümleri arasındaki ağ topolojisini **Three.js** kullanarak 3 boyutlu bir dijital ikiz simülasyonu olarak yansıtır. Modelden gelen anomali skoruna göre merkezi sistem durumu yeşilden (kararlı) kırmızıya (kritik) döner.
 *   **Arayüz Metrikleri:**
     *   **Aktif Düğüm Sayısı:** Topolojideki canlı izlenen departman sayısı (4).
@@ -132,7 +132,7 @@ Aşağıda, uygulamada yer alan her bir sayfanın arayüz tasarımı, işlevleri
 ![IT Departman Analitiği](assets/it.png)
 
 #### **Detaylı Açıklama:**
-*   **Dosya:** [it.html](file:///c:/Users/isley/Desktop/newAnomali/it.html)
+*   **Dosya:** [it.html](it.html)
 *   **İşlev:** Fabrika veri merkezlerinin ve network altyapısının canlı analitiğini sunar. Sunucu durumları, ağ performansı, gecikme (latency) süreleri ve güvenlik metrikleri izlenir.
 *   **Görselleştirmeler:** Chart.js grafikleri yardımıyla CPU kullanımı, RAM tüketimi, anlık bant genişliği (bandwidth) ve veri akış yönelimleri canlı olarak çizdirilir. Alt kısımda yer alan topoloji grafiği, IT düğümünün diğer departmanlarla olan ağ etkileşimini gösterir.
 *   **Metrikler:** Depolama (128 GB), Ortalama CPU (3.2 GHz), RAM Kullanımı (32 GB) ve Bant Genişliği (10 Gbps) gibi donanımsal izleme alanları.
@@ -144,7 +144,7 @@ Aşağıda, uygulamada yer alan her bir sayfanın arayüz tasarımı, işlevleri
 ![IoT Departman Analitiği](assets/iot.png)
 
 #### **Detaylı Açıklama:**
-*   **Dosya:** [ıot.html](file:///c:/Users/isley/Desktop/newAnomali/ıot.html)
+*   **Dosya:** [ıot.html](ıot.html)
 *   **İşlev:** Üretim hattındaki IoT sensörlerinin (sıcaklık, titreşim, tork ve çalışma döngüsü) verilerini anlık analiz eder.
 *   **İş Akışı:** Sensörlerden gelen verilerde ani yükselmeler veya paket kayıpları (`packet loss`) yaşandığında GNN tahmin motoru bunu anomali olarak yakalar ve operatöre kırmızı uyarı kartlarıyla bildirir.
 *   **Metrikler:** Sıcaklık (68°C), Aktif Cihaz Sayısı (1,247), Packet Loss (%12.4) ve Güç Durumu (%87) gibi sensör odaklı veriler yer alır.
@@ -156,7 +156,7 @@ Aşağıda, uygulamada yer alan her bir sayfanın arayüz tasarımı, işlevleri
 ![Finans Departman Analitiği](assets/finans.png)
 
 #### **Detaylı Açıklama:**
-*   **Dosya:** [finans.html](file:///c:/Users/isley/Desktop/newAnomali/finans.html)
+*   **Dosya:** [finans.html](finans.html)
 *   **İşlev:** Fabrika içi mali işlemleri, fatura döngülerini, maliyet dalgalanmalarını ve fraud (sahtekarlık) risklerini inceler.
 *   **Analiz:** Yapay zeka modeli finansal hareketlerdeki ani tutar sapmalarını veya olağandışı işlem sıklıklarını analiz ederek risk skorunu günceller.
 *   **Arayüz Öğeleri:** Toplam işlem hacmi (1.2M Transaction), Hata Oranları (%3.2), Ortalama Sepet Tutarı ($245) ve Mali Döngü Süresi (4.2ms) grafikleri.
@@ -168,7 +168,7 @@ Aşağıda, uygulamada yer alan her bir sayfanın arayüz tasarımı, işlevleri
 ![Otonom Lojistik Sayfası](assets/otonomLojistik.png)
 
 #### **Detaylı Açıklama:**
-*   **Dosya:** [otonomLojistik.html](file:///c:/Users/isley/Desktop/newAnomali/otonomLojistik.html)
+*   **Dosya:** [otonomLojistik.html](otonomLojistik.html)
 *   **İşlev:** Fabrika içi otonom taşıma araçlarının (AGV/AMR), teslimat rotalarının ve lojistik görevlerin durumunu takip eder.
 *   **Öznitelikler:** Çarpışma riski (`collision warning`), araç şarj seviyeleri (`state of charge - SoC`), rota verimliliği ve görev tamamlanma süreleri canlı olarak izlenir.
 *   **Görsel Unsurlar:** Rota haritaları, pil durum grafikleri ve araçların görev dağılımını gösteren ilerleme çubukları.
@@ -180,7 +180,7 @@ Aşağıda, uygulamada yer alan her bir sayfanın arayüz tasarımı, işlevleri
 ![Erişim Yönetim Paneli](assets/erisim.png)
 
 #### **Detaylı Açıklama:**
-*   **Dosya:** [erişim.html](file:///c:/Users/isley/Desktop/newAnomali/erişim.html)
+*   **Dosya:** [erişim.html](erişim.html)
 *   **İşlev:** Rol Bazlı Erişim Kontrolü (RBAC) yönetim merkezidir. Yalnızca `admin` rolündeki kullanıcıların erişimine açıktır.
 *   **Yönetim Araçları:**
     *   **Yeni Kullanıcı Ekleme:** İsim, e-posta, departman, rol ve erişebileceği sayfaların seçilerek sisteme eklenmesi.
@@ -194,7 +194,7 @@ Aşağıda, uygulamada yer alan her bir sayfanın arayüz tasarımı, işlevleri
 ![Yapay Zeka Karar Sistemi](assets/yapayZeka.png)
 
 #### **Detaylı Açıklama:**
-*   **Dosya:** [yapayZekaV2.html](file:///c:/Users/isley/Desktop/newAnomali/yapayZekaV2.html)
+*   **Dosya:** [yapayZekaV2.html](yapayZekaV2.html)
 *   **İşlev:** Graph Attention Network modelinin kararlarını şeffaflaştıran **Açıklanabilir Yapay Zeka (XAI)** ekranıdır.
 *   **Detaylar:**
     *   **Model Doğruluğu & Ağırlıklar:** GAT modelinin doğruluk skoru (%94) ve dikkat kafalarının (attention heads) departmanlar arası bağ gücü.
@@ -208,7 +208,7 @@ Aşağıda, uygulamada yer alan her bir sayfanın arayüz tasarımı, işlevleri
 ![Sistem Ayarları](assets/ayarlar.png)
 
 #### **Detaylı Açıklama:**
-*   **Dosya:** [ayarlar.html](file:///c:/Users/isley/Desktop/newAnomali/ayarlar.html)
+*   **Dosya:** [ayarlar.html](ayarlar.html)
 *   **İşlev:** Platformun çalışma dinamiklerini özelleştiren konfigürasyon panelidir.
 *   **Ayarlanabilir Alanlar:**
     *   **Veri Yenileme Hızı:** API'den veri çekme sıklığı (1s, 2s, 5s vb.). Değişim anında `localStorage` üzerinden tetiklenerek canlı akış hızını anında günceller.
@@ -223,7 +223,7 @@ Aşağıda, uygulamada yer alan her bir sayfanın arayüz tasarımı, işlevleri
 ![Kullanıcı Profili](assets/profil.png)
 
 #### **Detaylı Açıklama:**
-*   **Dosya:** [profil.html](file:///c:/Users/isley/Desktop/newAnomali/profil.html)
+*   **Dosya:** [profil.html](profil.html)
 *   **İşlev:** Giriş yapan kullanıcının kişisel bilgilerini, yetkili olduğu sayfaları ve geçmiş acil erişim taleplerini gösterir.
 *   **Profil Güncelleme:** Kullanıcı adını, e-postasını ve baş harflerini değiştirebilir; şifresini güncelleyebilir.
 *   **Profil Resmi Yükleme:** Kullanıcılar yerel bilgisayarlarından bir görsel yükleyerek profil resmi yapabilirler. Görsel, base64 formatına çevrilip tarayıcıda saklanır ve tüm sayfalardaki sidebar alanına yansıtılır.
@@ -246,7 +246,7 @@ ASGARD INTELLIGENCE, projeyi jüriye veya yöneticilere sunarken kolaylık sağl
 
 ## 👥 Proje Ekibi ve Görev Dağılımı
 
-Detaylı ekip üyeleri ve üstlendikleri somut kod sorumlulukları [GRUP_UYELERI_VE_GENEL_ROLLER.md](file:///c:/Users/isley/Desktop/newAnomali/GRUP_UYELERI_VE_GENEL_ROLLER.md) belgesinde tanımlanmıştır:
+Detaylı ekip üyeleri ve üstlendikleri somut kod sorumlulukları [GRUP_UYELERI_VE_GENEL_ROLLER.md](GRUP_UYELERI_VE_GENEL_ROLLER.md) belgesinde tanımlanmıştır:
 
 *   **Ahmet İşleyen (AI & API Mimarı):** Graph Attention Network (GAT) modeli eğitimi (`main.py`), olasılık çıkarım boru hattı, XAI (SHAP & LIME) matematiksel altyapısı ve Sunum Modu senaryolarının kodlanması.
 *   **Mehmet Ersolak (Backend & Veri Mühendisi):** SQLite veri tabanı mimarisi, ROWID indeksleme optimizasyonları, veri tutarlılık analizi (`analyze_db.py`), JWT & RBAC yetkilendirme katmanı ve acil erişim onay mekanizmaları.
