@@ -59,6 +59,9 @@ def test_backend():
 
     print("\n--- 7. Add User (Admin Only) ---")
     try:
+        # Pre-delete test_user_ai to make the test idempotent
+        requests.delete(f"{BASE_URL}/api/users/delete/test_user_ai", headers=headers)
+        
         new_user = {
             "username": "test_user_ai",
             "name": "Test User AI",
